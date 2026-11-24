@@ -1,0 +1,61 @@
+# ==========================================
+# ENTERPRISE POLICY COPILOT - .gitignore
+# Security & Confidential Data Protection
+# ==========================================
+
+# 1. Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# 2. Confidential Data & Real Policy Documents
+# (Keep data/sample/ unignored for synthetic sample data only)
+data/raw/
+data/processed/
+data/vector_store/
+
+# 3. Employee Logs, Search Logs & Confidential Datasets
+*.log
+logs/
+*employee*
+*confidential*
+*secret*
+
+# 4. Environment Variables & Secret Credentials
+.env
+.env.*
+*.env
+
+# 5. Python Cache & Build Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+
+# 6. Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# 7. OS & IDE Specific Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
